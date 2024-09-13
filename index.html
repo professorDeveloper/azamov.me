@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azamov me</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/profile.jpeg" type="image/x-icon">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--
+  - #MAIN
+-->
+
+    <main>
+
+        <!--
+      - #SIDEBAR
+    -->
+
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+
+                    <img src="./assets/images/profile.jpeg" alt="" width="400" >
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Azamov X">Azamov X</h1>
+
+                    <p class="title">Mobile Software Engineer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:azamovhud007@gmail.com" class="contact-link">azamovhud007@gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="" class="contact-link">in telegram</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="2007-03-31">March 31</time>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Tashkent, Uzbekistan</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://t.me/stc_android" class="social-link">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://instagram.com/azamovdev" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://github.com/professorDeveloper" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+          - #NAVBAR
+        -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+
+            <!--
+          - #ABOUT
+        -->
+
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I’m professional Mobile Software Engineer with about two year of experience in Mobile App
+                        Development. Building innovative Android and iOS apps with architecture design for easy upgrades
+                        and
+                        bug fixes.
+                    </p>
+
+                    <ul>
+                        <li>
+                            🤯 Developing for Android since 2021.
+                        </li>
+                        <li>
+                            💻 Currently working on very cool projects.
+                        </li>
+                        <li>
+                            🌱 I’m currently learning cyber security.
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!--
+              - service
+            -->
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                <p class="service-item-text">
+                                    Professional development of applications for iOS and Android.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-desktop">
+                                <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 32 32"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title />
+                                    <path
+                            
+                                        d="M29,24V6.44A1.46,1.46,0,0,0,27.5,5H4.5A1.46,1.46,0,0,0,3,6.44V24H0v0.44A2.55,2.55,0,0,0,2.5,27h27A2.55,2.55,0,0,0,32,24.44V24H29ZM4,6.44A0.46,0.46,0,0,1,4.5,6h23a0.46,0.46,0,0,1,.5.44V24H4V6.44ZM2.5,26a1.63,1.63,0,0,1-1.41-1H14v1H2.5Zm27,0H18V25H30.91A1.63,1.63,0,0,1,29.5,26Z" />
+                                    <path d="M5,23H27V7H5V23ZM6,8H26V22H6V8Z" />
+                                
+                                </svg>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Desktop Apps</h4>
+
+                                <p class="service-item-text">
+                                     Development of applications for Windows OS.
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <div class="modal-container" data-modal-container>
+
+                    <div class="overlay" data-overlay></div>
+
+                    <section class="testimonials-modal">
+
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                    </section>
+                </div>
+
+                <section class="about-text">
+
+                    <h3 class="h3 service-title">Interests</h3>
+
+                    <p>
+                        Apart from being Mobile Software Engineer, I enjoy learn Cyber security and English.
+                    </p>
+
+                    <p>
+                        I have a dream of becoming a Googler. I am trying my best to accomplish this. And this blog is
+                        for
+                        sharing my knowledge and experience acquired along the way :)
+                    </p>
+                </section>
+            </article>
+
+            <!--
+          - #RESUME
+        -->
+
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Pdp university</h4>
+
+                            <span>2024 — 2026</span>
+
+                            <p class="timeline-text">
+                                Software engineering
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Namangan, Pop 7 school</h4>
+
+                            <span>2013 - 2024</span>
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        
+                         <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Zbek Group</h4>
+
+                            <span>2024 — Present</span>
+
+                            <p class="timeline-text">
+                                I am currently working at Zbek Group
+                            </p>
+
+                        </li>
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Unical solutions</h4>
+
+                            <span>2024</span>
+
+                            <p class="timeline-text">
+                                Unical solutions (Soplay, Kitsune, Nikah Time)
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Impex Insurance</h4>
+
+                            <span>2023-2024</span>
+
+                            <p class="timeline-text">
+                                I worked at Impex Insurance in 2023
+                            </p>
+
+                        </li>
+
+
+                     
+                    </ol>
+
+                </section>
+
+                <section class="skill">
+
+                    <h3 class="h3 skills-title">My skills</h3>
+
+                    <ul class="skills-list content-card">
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Android</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Java, Kotlin</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Flutter</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">C++</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 50%;"></div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Dart</h5>
+                                <data value="60">60%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 60%;"></div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Jetpack libraries, Jetpack Compose, Material Design</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 50%;"></div>
+                            </div>
+
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Motion UI/UX in mobile</h5>
+                                <data value="60">60%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 60%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">MVVM, MVI, MVP</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Trello</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Uzbek</h5>
+                                <data value="100">100%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 100%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">English</h5>
+                                <data value="65">65%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 65%;"></div>
+                            </div>
+
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Russian</h5>
+                                <data value="40">40%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 40%;"></div>
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+            <!--
+          - #PORTFOLIO
+        -->
+
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+
+                    <div>
+                        <button data-select></button>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item  active" data-filter-item data-category="app development">
+                            <a href="https://play.google.com/store/apps/details?id=com.impex_insurance.ionline">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project1.webp" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">E-polis insruance</h3>
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="app development">
+                            <a href="https://apps.apple.com/ru/app/nikah-time/id1593398215">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/project11.webp" alt="finance" loading="lazy">
+
+                                </figure>
+
+                                <h3 class="project-title">Tashkent Metro</h3>
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="app development">
+                            <a href="https://github.com/professorDeveloper/Kitsune-App">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/projectlogokitsune.jpg" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Kitsune </h3>
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="app development">
+                            <a href="https://apps.apple.com/ru/app/nikah-time/id1593398215">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project10.webp" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Nikah Time</h3>
+                            </a>
+
+
+                    </ul>
+                    <hr class="divider">
+                    <ul class="new-product-list">
+                        <li>
+                            <h3 class="project-title">Smart Logo</h3>
+                            <img src="./assets/images/project12.png" />
+                        </li>
+
+                    </ul>
+                    <ul class="new-product-list">
+                        <li>
+                            <h3 class="project-title">Soplay</h3>
+                            <img src="./assets/images/project8.png" />
+
+                        </li>
+
+                    </ul>
+
+                    <ul class="new-product-list">
+                        <li>
+                            <h3 class="project-title">Nikah Time</h3>
+                            <img src="./assets/images/projectnikah.png" />
+
+                        </li>
+
+                    </ul>
+
+
+
+                </section>
+
+            </article>
+
+            <!--
+          - #CONTACT
+        -->
+
+
+
+        </div>
+
+    </main>
+
+
+    <!--
+  - custom js link
+-->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+  - ionicon link
+-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
