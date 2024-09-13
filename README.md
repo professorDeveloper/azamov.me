@@ -1,4 +1,4 @@
 
 # My Website 
 
-## [Check](https://azamov.me)
+## [My Site 🎯](https://azamov.me)
