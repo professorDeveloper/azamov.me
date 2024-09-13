@@ -1,4 +1,4 @@
 
 # My Website 
 
-## Check : azamov.me
+## [Check](https://azamov.me)
