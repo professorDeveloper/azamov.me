@@ -5,6 +5,7 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
     <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azamov me</title>
@@ -29,6 +30,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar, .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar-info {
+      text-align: center;
+    }
+    .avatar-box img {
+      width: 200px; /* Reduce avatar size */
+    }
+    .main-content {
+      padding: 10px;
+    }
+    .service-item, .skills-item {
+      text-align: center;
+    }
+    .navbar-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .project-img img {
+      width: 100%;
+      height: auto;
+    }
+    .skills-list {
+      padding: 10px;
+    }
+  }
+</style>
+
 </head>
 
 <body>
