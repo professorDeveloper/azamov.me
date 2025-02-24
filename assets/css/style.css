@@ -1896,7 +1896,7 @@ textarea.form-input::-webkit-resizer {
 
     .navbar-list {
         gap: 30px;
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .navbar-link {
