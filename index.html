@@ -34,6 +34,46 @@
 
 </head>
 
+    <style>
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .sidebar, .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sidebar-info {
+                text-align: center;
+            }
+
+            .avatar-box img {
+                width: 90px;
+                height: 90px /* Reduce avatar size */
+            }
+
+            .main-content {
+                padding: 10px;
+            }
+
+            .service-item, .skills-item {
+                text-align: center;
+            }
+
+            .navbar-list {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .project-img img {
+                width: 100%;
+                height: auto;
+            }
+
+            .skills-list {
+                padding: 10px;
+            }
+        }
+    </style>
 <body>
 
 <!--
