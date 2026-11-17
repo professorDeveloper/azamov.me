@@ -341,7 +341,15 @@ main {
     border-radius: 20px;
 }
 
+.about-text ul {
+    margin-bottom: 25px;
+}
+
 .avatar-box img {
+    width: 80px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -886,6 +894,14 @@ main {
     line-height: 1.6;
 }
 
+.timeline-text a {
+    display: inline;
+}
+
+.timeline-text a:hover {
+    text-decoration: underline;
+}
+
 
 /**
  * skills 
@@ -1000,8 +1016,8 @@ main {
 
 .project-list {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 20px;
     margin-bottom: 10px;
 }
 
@@ -1039,16 +1055,17 @@ main {
 }
 
 .project-item > a {
-    width: 95%;
+    display: block;
+    width: 100%;
 }
 
 .project-img {
     position: relative;
-    width: 95%;
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 16px;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .project-img::before {
@@ -1106,7 +1123,11 @@ main {
 
 .project-title,
 .project-category {
-    margin-left: 10px;
+    margin-left: 6px;
+}
+
+.project-category {
+    margin-top: 4px;
 }
 
 .project-title {
@@ -1814,7 +1835,11 @@ textarea.form-input::-webkit-resizer {
     }
 
     /* portfolio and blog grid */
-    .project-list, .blog-posts-list {
+    .project-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blog-posts-list {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1928,7 +1953,7 @@ textarea.form-input::-webkit-resizer {
      * PORTFOLIO
      */
     .project-list {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
 

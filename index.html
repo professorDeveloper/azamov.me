@@ -5,10 +5,11 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azamov me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#121212">
+    <title>Azamov X — Mobile Software Engineer</title>
+    <meta name="description" content="Azamov X — Mobile Software Engineer (Android / iOS / Flutter). 2.5+ years, 15+ apps shipped to Google Play and the App Store.">
 
     <!--
       - favicon
@@ -32,48 +33,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 
-</head>
-
     <style>
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .sidebar, .main-content {
-                flex-direction: column;
-                align-items: center;
+        /* Mobile adjustments */
+        @media (max-width: 579px) {
+            main {
+                margin-bottom: calc(88px + env(safe-area-inset-bottom));
             }
 
-            .sidebar-info {
-                text-align: center;
-            }
-
-            .avatar-box img {
-                width: 90px;
-                height: 90px /* Reduce avatar size */
-            }
-
-            .main-content {
-                padding: 10px;
-            }
-
-            .service-item, .skills-item {
-                text-align: center;
+            .navbar {
+                padding-bottom: env(safe-area-inset-bottom);
             }
 
             .navbar-list {
-                display: flex;
-                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                padding: 0 4px;
             }
 
-            .project-img img {
-                width: 100%;
-                height: auto;
+            .navbar-link {
+                padding: 18px 8px;
             }
 
-            .skills-list {
-                padding: 10px;
+            .project-list {
+                gap: 20px 12px;
+            }
+
+            .project-title {
+                font-size: 14px;
+            }
+
+            .timeline-text {
+                font-size: 14px;
             }
         }
     </style>
+</head>
+
+
 <body>
 
 <!--
@@ -138,7 +134,21 @@
                     <div class="contact-info">
                         <p class="contact-title">Phone</p>
 
-                        <a href="" class="contact-link">in telegram</a>
+                        <a href="tel:+998943017410" class="contact-link">+998 (94) 301-74-10</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Telegram</p>
+
+                        <a href="https://t.me/ackles" class="contact-link">@ackles</a>
                     </div>
 
                 </li>
@@ -195,6 +205,18 @@
                     </a>
                 </li>
 
+                <li class="social-item">
+                    <a href="https://linkedin.com/in/azamov-kh" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://leetcode.com/u/azamovme" class="social-link">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                    </a>
+                </li>
+
             </ul>
 
         </div>
@@ -247,10 +269,10 @@
 
             <section class="about-text">
                 <p>
-                    I’m professional Mobile Software Engineer with about two year of experience in Mobile App
-                    Development. Building innovative Android and iOS apps with architecture design for easy upgrades
-                    and
-                    bug fixes.
+                    Mobile Software Engineer with 4 years of commercial experience building Android, Android TV,
+                    iOS and cross-platform Flutter applications. Shipped 15+ products to Google Play and the App Store,
+                    from zero to release. I care about clean architecture, maintainable code and interfaces that real
+                    users actually enjoy — and I back it up with 500+ solved algorithm problems.
                 </p>
 
                 <ul>
@@ -258,7 +280,13 @@
                         🤯 Developing for Android since 2021.
                     </li>
                     <li>
-                        💻 Currently working on very cool projects.
+                        🚀 15+ apps published across EdTech, streaming, e-commerce, fintech and healthcare.
+                    </li>
+                    <li>
+                        🧠 502 problems solved on LeetCode (201 Easy · 232 Medium · 69 Hard).
+                    </li>
+                    <li>
+                        💻 Currently building SATashkent and the Biznex POS/ERP system as a Flutter Developer.
                     </li>
                     <li>
                         🌱 I’m currently learning cyber security.
@@ -300,12 +328,42 @@
                         </div>
 
                         <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Full Stack
-                                <D></D>
-                            </h4>
+                            <h4 class="h4 service-item-title">Full Stack</h4>
 
                             <p class="service-item-text">
                                 Developing and maintaining web applications using MERN stack.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <ion-icon name="tv-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Android TV &amp; Streaming</h4>
+
+                            <p class="service-item-text">
+                                TV-first apps with D-pad focus handling, Leanback, ExoPlayer and DASH streaming.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <ion-icon name="cube-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">AR &amp; 3D</h4>
+
+                            <p class="service-item-text">
+                                ARCore and 3D model viewers — place products in your own room before buying.
                             </p>
                         </div>
 
@@ -333,13 +391,12 @@
                 <h3 class="h3 service-title">Interests</h3>
 
                 <p>
-                    Apart from being Mobile Software Engineer, I enjoy learn Cyber security and English.
+                    Apart from being a Mobile Software Engineer, I enjoy learning cyber security and English.
                 </p>
 
                 <p>
-                    I have a dream of becoming a Googler. I am trying my best to accomplish this. And this blog is
-                    for
-                    sharing my knowledge and experience acquired along the way :)
+                    I have a dream of becoming a Googler, and I am trying my best to accomplish it. This site is
+                    where I share the projects, knowledge and experience I gain along the way :)
                 </p>
             </section>
         </article>
@@ -358,36 +415,391 @@
 
                 <div class="title-wrapper">
                     <div class="icon-box">
-                        <ion-icon name="book-outline"></ion-icon>
+                        <ion-icon name="briefcase-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3">Work</h3>
+                    <h3 class="h3">Experience</h3>
                 </div>
 
                 <ol class="timeline-list">
 
                     <li class="timeline-item">
 
-                        <h4 class="h4 timeline-item-title">Kino plus</h4>
+                        <h4 class="h4 timeline-item-title">Flutter Developer — SATashkent</h4>
 
-                        <span>2025</span>
+                        <span>Jun 2026 — Present</span>
 
                         <p class="timeline-text">
-                            Software engineering (Kotlin,Flutter,Android,TV)
+                            EdTech, Tashkent · SAT preparation platform for school students in Central Asia.<br>
+                            • Built the SATashkent mobile app from zero and owned the full cycle: architecture, UI, API integration, store review and release.<br>
+                            • Full-length practice tests with a timer, a question bank by section and detailed answer explanations.<br>
+                            • Progress tracking and per-topic result statistics.<br>
+                            <a href="https://apps.apple.com/uz/app/satashkent/id6783032620" style="color: var(--orange-yellow-crayola);">App Store</a>
                         </p>
 
                     </li>
 
                     <li class="timeline-item">
 
-                        <h4 class="h4 timeline-item-title">Kinoplus TV/Mobile</h4>
+                        <h4 class="h4 timeline-item-title">Flutter Developer — Biznex</h4>
 
-                        <span>2025</span>
+                        <span>Feb 2026 — Present</span>
+
+                        <p class="timeline-text">
+                            Cloud POS/ERP system for restaurants and retail in Uzbekistan.<br>
+                            • Built two generations of the Biznex Flutter app and the biznex.uz landing site.<br>
+                            • V1 (desktop-first): Windows POS terminal with the full order lifecycle, real-time WebSocket sync (sequence-based event tracking, auto-reconnect with exponential backoff), Hive storage and offline-first architecture.<br>
+                            • V2 (mobile-first): iOS/Android app with QR/barcode scanning and adaptive UI for tablets and phones.<br>
+                            • Riverpod (20+ providers) with Flutter Hooks; StateNotifier cart with optimistic concurrency control and version-conflict resolution.<br>
+                            • Role and permission system (Admin, Cashier, Waiter) with dynamic UI and a permission matrix for actions.<br>
+                            • Hybrid offline-first data layer: Hive + REST API (Dio) + WebSocket with automatic recovery of missed events.<br>
+                            • Order management: tables and halls, split payments (Cash, Card, UPI), custom pricing, scheduled orders and order notes.<br>
+                            • Receipt printing: PDF generation with custom fonts, ESC/POS thermal printers, multi-printer setup per hall.<br>
+                            • Products with variants, recipes and ingredients, barcodes and stock tracking; sales analytics with Syncfusion Charts and staff reports.<br>
+                            • Uzbek (Latin/Cyrillic), Russian and English; dark and light themes.<br>
+                            <a href="https://biznex.uz" style="color: var(--orange-yellow-crayola);">biznex.uz</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Flutter Developer — Evim Furniture</h4>
+
+                        <span>Jan 2026 — May 2026</span>
+
+                        <p class="timeline-text">
+                            E-commerce · furniture retail chain.<br>
+                            • Built the cross-platform iOS/Android app from scratch with feature-based Clean Architecture (data / domain / presentation) and BLoC.<br>
+                            • Firebase Auth with 4 sign-in methods (phone OTP, email, Google, Apple) in a single auth flow.<br>
+                            • Interactive 3D furniture viewer with rotation and live color/material selection (WebXR).<br>
+                            • AR with native ARKit on iOS and Scene Viewer on Android; AI Try Room — upload a room photo and see the furniture placed by AI.<br>
+                            • Dio interceptors with Firebase ID tokens, FCM push notifications, easy_localization (UZ/RU/EN), Hive and Secure Storage, dark/light themes.<br>
+                            • Catalog of 1000+ products with pagination, search, filters, server-synced favorites and image caching.<br>
+                            • Built the responsive, animated, multilingual evimfurniture.uz website.<br>
+                            <a href="https://apps.apple.com/us/app/evim-furniture/id6763886105" style="color: var(--orange-yellow-crayola);">App Store</a> · <a href="https://evimfurniture.uz" style="color: var(--orange-yellow-crayola);">evimfurniture.uz</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Flutter Developer — Meat House</h4>
+
+                        <span>Jan 2026 — Mar 2026</span>
+
+                        <p class="timeline-text">
+                            Halal food marketplace for South Korea.<br>
+                            • Delivered the full product: iOS/Android app, landing site and backend.<br>
+                            • Flutter app from scratch with Clean Architecture (Presentation → Domain → Data) and BLoC/Cubit.<br>
+                            • Firebase backend: Firestore with transactions for order IDs, phone OTP auth, Storage for avatars and receipts, FCM push.<br>
+                            • Full e-commerce cycle: catalog with pagination and filters, cart with optimistic updates and LRU caching, favorites, checkout and order tracking.<br>
+                            • 4 languages (Uzbek, Russian, English, Korean); delivery addresses with Google Maps and Mapbox, geolocation and reverse geocoding.<br>
+                            • GetIt DI (21+ dependencies), Repository + Use Case layers, custom Result type; cursor-based pagination, 450 ms search debounce, lazy init.<br>
+                            • Dark/light theme, Lottie onboarding, adaptive UI.<br>
+                            <a href="https://apps.apple.com/us/app/meathouse/id6759532413" style="color: var(--orange-yellow-crayola);">App Store</a> · <a href="https://www.meathouse.me" style="color: var(--orange-yellow-crayola);">meathouse.me</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Flutter &amp; Android TV Developer — Uzmovi</h4>
+
+                        <span>Jan 2025 — May 2026</span>
+
+                        <p class="timeline-text">
+                            Streaming platform · uzmovi.com.<br>
+                            • Built DodaPlay, the Flutter mobile streaming app.<br>
+                            • Developed the Android TV app for MoviPlay with a library of 1000+ HD films, series and cartoons.<br>
+                            • TV-first navigation (D-pad focus handling, Leanback patterns) and adaptive layouts for phone and TV.<br>
+                            <a href="https://play.google.com/store/apps/details?id=uz.dodaplay.app" style="color: var(--orange-yellow-crayola);">DodaPlay</a> · <a href="https://play.google.com/store/apps/details?id=uz.doda.play" style="color: var(--orange-yellow-crayola);">DodaPlay TV</a> · <a href="https://uzmovi.com" style="color: var(--orange-yellow-crayola);">uzmovi.com</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Android Developer — SATIP IPTV</h4>
+
+                        <span>Feb 2025 — May 2025</span>
+
+                        <p class="timeline-text">
+                            IPTV / streaming.<br>
+                            • Developed IPSAT, a streaming app for films and series on Android and Android TV.<br>
+                            • Kotlin, MVVM, Koin, REST API, DASH streaming and TMDB API, with an adaptive UI shared across phone and TV.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Flutter Developer — Haad</h4>
+
+                        <span>Dec 2024 — Jun 2025</span>
+
+                        <p class="timeline-text">
+                            EdTech · online courses in cyber security, programming and design.<br>
+                            • Built the haady mobile app in Flutter and a Flutter Web admin panel for courses, content and users.<br>
+                            • Firebase stack: Firestore, Auth, Storage for learning materials, FCM push notifications.<br>
+                            • Course flow: catalog, video lessons, progress tracking and tests; roles for admin, teacher and student.<br>
+                            <a href="https://play.google.com/store/apps/details?id=com.haad.learn" style="color: var(--orange-yellow-crayola);">Google Play</a> · <a href="https://www.haad.ai" style="color: var(--orange-yellow-crayola);">haad.ai</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Flutter Developer — MedHome</h4>
+
+                        <span>Nov 2024 — Nov 2025</span>
+
+                        <p class="timeline-text">
+                            Healthcare · 24/7 doctor and nurse home visits in Tashkent.<br>
+                            • Built the MedHome app in Flutter: ordering injections, IV drips, lab tests, ultrasound, dressings and specialist consultations.<br>
+                            • Real-time order tracking with call status and medic arrival time (15–30 minutes).<br>
+                            • Service catalog with prices and online booking, status notifications, visit history, patient profile and reviews.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Android Developer — ZBEKZ Company</h4>
+
+                        <span>Aug 2024 — Feb 2025</span>
+
+                        <p class="timeline-text">
+                            zbekz.com, Tashkent.<br>
+                            • Built the Tashkent Metro Android app, reaching 10,000+ downloads on Google Play.<br>
+                            • Interactive metro map with Custom View / Canvas API, route search over REST API and user geolocation.<br>
+                            • Also owned UI/UX design and app performance optimization.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Android Developer — Sin Shop</h4>
+
+                        <span>Jan 2024 — Apr 2024</span>
+
+                        <p class="timeline-text">
+                            Food products / wholesale trading platform, Moscow (Remote).<br>
+                            • Developed and maintained a native Android app for a B2B trading platform with Dagger Hilt + MVVM + Clean Architecture.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Freelance</h4>
+
+                        <span>2024</span>
+
+                        <p class="timeline-text">
+                            Soplay, Kitsune, Nikah Time.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Mobile Developer — Impex Insurance</h4>
+
+                        <span>Oct 2022 — Oct 2024</span>
+
+                        <p class="timeline-text">
+                            • Built the E-Polis Insurance app for buying and managing insurance policies.<br>
+                            • Integrated Click payment technologies.<br>
+                            <a href="https://play.google.com/store/apps/details?id=com.impex_insurance.ionline" style="color: var(--orange-yellow-crayola);">Google Play</a> · <a href="https://apps.apple.com/uz/app/impex-insurance/id6472928371" style="color: var(--orange-yellow-crayola);">App Store</a>
+                        </p>
+
                     </li>
 
                 </ol>
 
             </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="apps-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Selected projects</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Biznex</h4>
+
+                        <p class="timeline-text">
+                            POS &amp; business automation for cafes and restaurants — main app, Waiter, Cashier Pro and Owner Pro.<br>
+                            <a href="https://biznex.uz" style="color: var(--orange-yellow-crayola);">biznex.uz</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Dental Place</h4>
+
+                        <p class="timeline-text">
+                            Dental education app: knowledge base, clinical cases and professional growth for dentists and students.<br>
+                            <a href="https://play.google.com/store/apps/details?id=uz.dentalplace.dental_place" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Mary Ai</h4>
+
+                        <p class="timeline-text">
+                            AI management system for restaurants, cafes and teahouses: POS, inventory, finance, staff, delivery and CRM.<br>
+                            <a href="https://maryai.uz" style="color: var(--orange-yellow-crayola);">maryai.uz</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Yurideks</h4>
+
+                        <p class="timeline-text">
+                            AI legal assistant that answers in plain language based on the laws of Uzbekistan.<br>
+                            <a href="https://play.google.com/store/apps/details?id=uz.yurideks.yurideks_app" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Femmy</h4>
+
+                        <p class="timeline-text">
+                            Android, AI-powered women's health app.<br>
+                            <a href="https://play.google.com/store/apps/details?id=app.femmy.ai.behad" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">SATashkent &amp; SATashkent Staff</h4>
+
+                        <p class="timeline-text">
+                            Flutter · SAT preparation app built from zero, plus a staff app.<br>
+                            <a href="https://play.google.com/store/apps/details?id=student.satashkent.uz" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">DodaPlay &amp; DodaPlay TV</h4>
+
+                        <p class="timeline-text">
+                            Android &amp; Android TV streaming.<br>
+                            <a href="https://play.google.com/store/apps/details?id=uz.doda.play" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Tashkent Metro</h4>
+
+                        <p class="timeline-text">
+                            Android, Kotlin, Canvas API · 10,000+ downloads.<br>
+                            <a href="https://play.google.com/store/apps/details?id=com.zbekz.tashkentmetro" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Evim Furniture</h4>
+
+                        <p class="timeline-text">
+                            Flutter, AR &amp; 3D viewer.<br>
+                            <a href="https://play.google.com/store/apps/details?id=com.saikou.evimfurniture" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Meat House</h4>
+
+                        <p class="timeline-text">
+                            Flutter, BLoC + Clean Architecture.<br>
+                            <a href="https://play.google.com/store/apps/details?id=com.saikou.meathouse" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">E-Polis Insurance</h4>
+
+                        <p class="timeline-text">
+                            Android, insurance policies.<br>
+                            <a href="https://play.google.com/store/apps/details?id=com.impex_insurance.ionline" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Kitsune</h4>
+
+                        <p class="timeline-text">
+                            Open-source anime streaming app for Android, Kotlin.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">haady</h4>
+
+                        <p class="timeline-text">
+                            Flutter · EdTech app for online courses with a Flutter Web admin panel.<br>
+                            <a href="https://play.google.com/store/apps/details?id=com.haad.learn" style="color: var(--orange-yellow-crayola);">Google Play</a>
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">MedHome, Oqyo'l, Yulchi</h4>
+
+                        <p class="timeline-text">
+                            Android apps for healthcare and transport services.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Nikah Time · Sozo · Panda TV</h4>
+
+                        <p class="timeline-text">
+                            iOS app on the App Store; Sozo &amp; Panda TV web platforms.<br>
+                            <a href="https://pandatv.uz" style="color: var(--orange-yellow-crayola);">pandatv.uz</a>
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
             <section class="timeline">
 
                 <div class="title-wrapper">
@@ -402,12 +814,12 @@
 
                     <li class="timeline-item">
 
-                        <h4 class="h4 timeline-item-title">Pdp university</h4>
+                        <h4 class="h4 timeline-item-title">PDP University</h4>
 
-                        <span>2024 — 2026</span>
+                        <span>2024 — 2028 (expected)</span>
 
                         <p class="timeline-text">
-                            Software engineering
+                            BS in Software Engineering (Mobile), Tashkent, Uzbekistan.
                         </p>
 
                     </li>
@@ -416,7 +828,8 @@
 
                         <h4 class="h4 timeline-item-title">Namangan, Pop 7 school</h4>
 
-                        <span>2013 - 2024</span>
+                        <span>2013 — 2024</span>
+
                     </li>
 
                 </ol>
@@ -427,49 +840,61 @@
 
                 <div class="title-wrapper">
                     <div class="icon-box">
-                        <ion-icon name="book-outline"></ion-icon>
+                        <ion-icon name="trophy-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3">Experience</h3>
+                    <h3 class="h3">Honors and achievements</h3>
                 </div>
 
                 <ol class="timeline-list">
 
                     <li class="timeline-item">
 
-                        <h4 class="h4 timeline-item-title">Zbek Group</h4>
+                        <h4 class="h4 timeline-item-title">LeetCode — 502 problems solved</h4>
 
-                        <span>2024 — Present</span>
-
-                        <p class="timeline-text">
-                            I worked on the Tashkent Metro project at Zbek Group
-                        </p>
-
-                    </li>
-                    <li class="timeline-item">
-
-                        <h4 class="h4 timeline-item-title">Freelance</h4>
-
-                        <span>2024</span>
+                        <span>201 Easy · 232 Medium · 69 Hard</span>
 
                         <p class="timeline-text">
-                            Freelance (Soplay, Kitsune, Nikah Time)
+                            <a href="https://leetcode.com/u/azamovme" style="color: var(--orange-yellow-crayola);">leetcode.com/u/azamovme</a>
                         </p>
 
                     </li>
 
                     <li class="timeline-item">
 
-                        <h4 class="h4 timeline-item-title">Impex Insurance</h4>
+                        <h4 class="h4 timeline-item-title">15+ published mobile apps</h4>
 
-                        <span>2023-2024</span>
+                        <span>Google Play &amp; App Store</span>
 
                         <p class="timeline-text">
-                            I worked at Impex Insurance in 2023
+                            Across EdTech, streaming, e-commerce, fintech and healthcare.
                         </p>
 
                     </li>
 
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Open-source contributor</h4>
+
+                        <span>GitHub @professorDeveloper</span>
+
+                        <p class="timeline-text">
+                            124 public repositories and 229 followers.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Recommendation</h4>
+
+                        <span>Moviplay</span>
+
+                        <p class="timeline-text">
+                            From Asadbek Turg'unboyev, Head of Development Group at Moviplay.
+                        </p>
+
+                    </li>
 
                 </ol>
 
@@ -484,7 +909,72 @@
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">Android</h5>
+                            <h5 class="h5">Kotlin, Java</h5>
+                            <data value="85">85%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 85%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Android SDK, Jetpack (Compose, Navigation, Room, WorkManager)</h5>
+                            <data value="85">85%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 85%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Flutter, Dart</h5>
+                            <data value="90">90%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 90%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Riverpod, Flutter Hooks, BLoC/Cubit, GetIt</h5>
+                            <data value="85">85%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 85%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Firebase (Auth, Firestore, Storage, FCM)</h5>
+                            <data value="85">85%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 85%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Hive, Secure Storage, Dio, WebSocket, offline-first</h5>
                             <data value="80">80%</data>
                         </div>
 
@@ -497,12 +987,12 @@
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">Java, Kotlin</h5>
-                            <data value="80">80%</data>
+                            <h5 class="h5">Google Maps, Mapbox, geolocation</h5>
+                            <data value="75">75%</data>
                         </div>
 
                         <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                            <div class="skill-progress-fill" style="width: 75%;"></div>
                         </div>
 
                     </li>
@@ -510,7 +1000,20 @@
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">Flutter</h5>
+                            <h5 class="h5">ARKit, Scene Viewer, WebXR 3D</h5>
+                            <data value="65">65%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 65%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">ESC/POS printing, PDF generation, Syncfusion Charts</h5>
                             <data value="70">70%</data>
                         </div>
 
@@ -520,56 +1023,15 @@
 
                     </li>
 
-
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">C++</h5>
-                            <data value="50">50%</data>
+                            <h5 class="h5">Android TV / Leanback, ExoPlayer, DASH streaming</h5>
+                            <data value="75">75%</data>
                         </div>
 
                         <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 50%;"></div>
-                        </div>
-
-                    </li>
-
-
-                    <li class="skills-item">
-
-                        <div class="title-wrapper">
-                            <h5 class="h5">Dart</h5>
-                            <data value="60">60%</data>
-                        </div>
-
-                        <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 60%;"></div>
-                        </div>
-
-                    </li>
-
-
-                    <li class="skills-item">
-
-                        <div class="title-wrapper">
-                            <h5 class="h5">Jetpack libraries, Jetpack Compose, Material Design</h5>
-                            <data value="50">50%</data>
-                        </div>
-
-                        <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 50%;"></div>
-                        </div>
-
-                    </li>
-                    <li class="skills-item">
-
-                        <div class="title-wrapper">
-                            <h5 class="h5">Motion UI/UX in mobile</h5>
-                            <data value="60">60%</data>
-                        </div>
-
-                        <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                            <div class="skill-progress-fill" style="width: 75%;"></div>
                         </div>
 
                     </li>
@@ -577,7 +1039,46 @@
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">MVVM, MVI, MVP</h5>
+                            <h5 class="h5">Clean Architecture, MVVM, MVI, MVP, BLoC</h5>
+                            <data value="80">80%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Dagger Hilt, Koin, GetIt, Coroutines &amp; Flow</h5>
+                            <data value="80">80%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">REST API, Retrofit, Firebase, SQLite</h5>
+                            <data value="80">80%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Custom Views &amp; Canvas API, Material Design, Motion UI/UX</h5>
                             <data value="70">70%</data>
                         </div>
 
@@ -590,21 +1091,72 @@
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">Trello</h5>
-                            <data value="80">80%</data>
+                            <h5 class="h5">ARCore &amp; 3D model viewers, CameraX</h5>
+                            <data value="60">60%</data>
                         </div>
 
                         <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
                         </div>
 
                     </li>
 
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Algorithms and Data Structures</h5>
+                            <data value="75">75%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 75%;"></div>
+                        </div>
+
+                    </li>
 
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">Uzbek</h5>
+                            <h5 class="h5">Swift, C/C++, JavaScript, Python</h5>
+                            <data value="50">50%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 50%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Git, CI/CD, Trello/Jira, Unit Testing</h5>
+                            <data value="75">75%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 75%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Google Play &amp; App Store release process</h5>
+                            <data value="90">90%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 90%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Uzbek — Native</h5>
                             <data value="100">100%</data>
                         </div>
 
@@ -617,7 +1169,7 @@
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">English</h5>
+                            <h5 class="h5">English — B1, Intermediate</h5>
                             <data value="65">65%</data>
                         </div>
 
@@ -626,10 +1178,11 @@
                         </div>
 
                     </li>
+
                     <li class="skills-item">
 
                         <div class="title-wrapper">
-                            <h5 class="h5">Russian</h5>
+                            <h5 class="h5">Russian — A2, Elementary</h5>
                             <data value="40">40%</data>
                         </div>
 
@@ -638,7 +1191,6 @@
                         </div>
 
                     </li>
-
 
                 </ul>
 
@@ -664,19 +1216,130 @@
                 </div>
 
                 <ul class="project-list">
-
                     <li class="project-item  active" data-filter-item data-category="app development">
-                        <a href="https://apps.apple.com/uz/app/satashkent/id6783032620">
+                        <a href="https://play.google.com/store/apps/details?id=uz.dentalplace.dental_place">
 
                             <figure class="project-img">
                                 <div class="project-item-icon-box">
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
-                                <img src="https://lh3.googleusercontent.com/t8oItd8tMB82I66CZW3AfN5Uz7HxuKnFUb6htAiTNO51w8XTcSp-fkm2ryxSiMAgn0s-s3zkQsQGIhTGdEU1BRk" alt="finance" loading="lazy">
 
+                                <img src="./assets/images/dentalplace_logo.webp" alt="Dental Place" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Dental Place</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://maryai.uz">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/maryai.png" alt="Mary Ai" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Mary Ai</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://biznex.uz">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/biznex.webp" alt="Biznex" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Biznex</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://play.google.com/store/apps/details?id=student.satashkent.uz">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/satashkent.webp" alt="SATashkent" loading="lazy">
                             </figure>
 
                             <h3 class="project-title">SATashkent</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://play.google.com/store/apps/details?id=staff.satashkent.uz">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/satashkent_staff.webp" alt="SATashkent Staff" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">SATashkent Staff</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://play.google.com/store/apps/details?id=app.femmy.ai.behad">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/femmy.webp" alt="Femmy" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Femmy</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://play.google.com/store/apps/details?id=uz.dodaplay.app">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/dodoplay.webp" alt="DodaPlay" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">DodaPlay</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://play.google.com/store/apps/details?id=uz.yurideks.yurideks_app">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/yurideks.webp" alt="Yurideks" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Yurideks</h3>
+                        </a>
+                    </li>
+                    <li class="project-item  active" data-filter-item data-category="app development">
+                        <a href="https://play.google.com/store/apps/details?id=com.haad.learn">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/haady.webp" alt="haady" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">haady</h3>
                         </a>
                     </li>
                     <li class="project-item  active" data-filter-item data-category="app development">
@@ -687,10 +1350,10 @@
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/project1.webp" alt="finance" loading="lazy">
+                                <img src="./assets/images/project1.webp" alt="E-Polis Insurance" loading="lazy">
                             </figure>
 
-                            <h3 class="project-title">E-polis insruance</h3>
+                            <h3 class="project-title">E-Polis Insurance</h3>
                         </a>
                     </li>
                     <li class="project-item  active" data-filter-item data-category="app development">
@@ -701,7 +1364,7 @@
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/sozoapp.jpg" alt="finance" loading="lazy">
+                                <img src="./assets/images/sozoapp.jpg" alt="Sozo App" loading="lazy">
                             </figure>
 
                             <h3 class="project-title">Sozo App</h3>
@@ -715,28 +1378,13 @@
                                 <div class="project-item-icon-box">
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
-                                <img src="./assets/images/project11.webp" alt="finance" loading="lazy">
+                                <img src="./assets/images/project11.webp" alt="Tashkent Metro" loading="lazy">
 
                             </figure>
 
                             <h3 class="project-title">Tashkent Metro</h3>
                         </a>
                     </li>
-                    <li class="project-item  active" data-filter-item data-category="app development">
-                        <a href="https://play.google.com/store/apps/details?id=com.saikou.oqyol_user">
-
-                            <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-                                <img src="https://play-lh.googleusercontent.com/PvzItAvbfdeC6c9YNO3DmrStdhrXjH4VIcAYvH6XpHIBqSVZVhJbIga-1g7VVevPRdXa7VvUVQowY8WSHip5GQ=w240-h480-rw" alt="finance" loading="lazy">
-
-                            </figure>
-
-                            <h3 class="project-title">Oqyo`l</h3>
-                        </a>
-                    </li>
-
                     <li class="project-item  active" data-filter-item data-category="app development">
                         <a href="https://play.google.com/store/apps/details?id=uz.doda.play">
 
@@ -745,11 +1393,11 @@
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="https://play-lh.googleusercontent.com/GDNqrnw8ihwIJmdmGi6mQGV8VSSGSwNge4H0IkUpMnfXMoCZ8nEOpzVUzA2qlbXNP1O0X_CbxN-ydghlCLajdw=w480-h960-rw"
-                                     alt="finance" loading="lazy">
+                                <img src="./assets/images/dodoplay.webp"
+                                     alt="DodaPlay TV" loading="lazy">
                             </figure>
 
-                            <h3 class="project-title">DodoPlay(Uzmovi)</h3>
+                            <h3 class="project-title">DodaPlay TV</h3>
                         </a>
                     </li>
                     <li class="project-item  active" data-filter-item data-category="app development">
@@ -760,25 +1408,11 @@
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="https://play-lh.googleusercontent.com/TZ0fhq8zfYCwHzDv3N65vVDT9pBgNnE8ZZxIFrGdzUH5sPWZUBDdHJfGl0cLloBZMyeQux9wUPEA8N9shwitIg=w240-h480-rw"
-                                     alt="finance" loading="lazy">
+                                <img src="./assets/images/evimfurniture.webp"
+                                     alt="Evim Furniture" loading="lazy">
                             </figure>
 
                             <h3 class="project-title">Evim Furniture</h3>
-                        </a>
-                    </li>
-                    <li class="project-item  active" data-filter-item data-category="app development">
-                        <a href="https://play.google.com/store/apps/details?id=app.femmy.ai.behad">
-
-                            <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-                                <img src="https://play-lh.googleusercontent.com/nIIo25S5ZoFSdRnpKmP_G0EYNNxVJ4O_rSp3PdwtSMp_se_FKSvkSKpVGe9fuevI8wF_kOVy5j2-wkPMduNJ=w240-h480-rw" alt="finance" loading="lazy">
-
-                            </figure>
-
-                            <h3 class="project-title">Femmy</h3>
                         </a>
                     </li>
                     <li class="project-item  active" data-filter-item data-category="app development">
@@ -789,10 +1423,10 @@
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/projectlogokitsune.jpg" alt="finance" loading="lazy">
+                                <img src="./assets/images/projectlogokitsune.jpg" alt="Kitsune" loading="lazy">
                             </figure>
 
-                            <h3 class="project-title">Kitsune </h3>
+                            <h3 class="project-title">Kitsune</h3>
                         </a>
                     </li>
                     <li class="project-item  active" data-filter-item data-category="app development">
@@ -803,10 +1437,10 @@
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/pandatv.webp" alt="finance" loading="lazy">
+                                <img src="./assets/images/pandatv.webp" alt="Panda TV" loading="lazy">
                             </figure>
 
-                            <h3 class="project-title">Panda Tv </h3>
+                            <h3 class="project-title">Panda TV</h3>
                         </a>
                     </li>
                     <li class="project-item  active" data-filter-item data-category="app development">
@@ -817,26 +1451,26 @@
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/nikahtimelogo.webp" alt="finance" loading="lazy">
+                                <img src="./assets/images/nikahtimelogo.webp" alt="Nikah Time" loading="lazy">
                             </figure>
 
-                            <h3 class="project-title">Nikah Time </h3>
+                            <h3 class="project-title">Nikah Time</h3>
                         </a>
                     </li>
 
 
                     <li class="project-item  active" data-filter-item data-category="app development">
 
-                        <a href="https://play.google.com/store/apps/details?id=uz.medhome.medhome.medhome&hl=en">
+                        <a href="https://play.google.com/store/apps/details?id=com.azamovhudstc.doc_app&hl=en">
                             <figure class="project-img">
                                 <div class="project-item-icon-box">
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="https://play-lh.googleusercontent.com/LbwItyeHx1SPc9Nu0eOCZvuu3qocq1lor69TQArGj09uex_HpyI8T6tBDU1EbaYDWST6meSxjqgsbL-GTNzvKA=w240-h480-rw" alt="finance" loading="lazy">
+                                <img src="./assets/images/medhome_logo.png" alt="MedHome" loading="lazy">
                             </figure>
 
-                            <h3 class="project-title">MedHome </h3>
+                            <h3 class="project-title">MedHome</h3>
                         </a>
                     </li>
 
@@ -849,7 +1483,7 @@
                                     <h4>Soon</h4>
                                 </div>
 
-                                <img src="./assets/images/kinoplus.png" alt="finance" loading="lazy">
+                                <img src="./assets/images/kinoplus.png" alt="Kino plus" loading="lazy">
                             </figure>
                         </a>
                         <h3 class="project-title">Kino plus</h3>
@@ -862,8 +1496,8 @@
                                     <h4>View</h4>
                                 </div>
 
-                                <img src="https://play-lh.googleusercontent.com/9gN48X6Pk7yhgYrnFOHfFBSP5xuXpXpxgPjJ1r4Bs9YW2vw5eEDo8O3VwY-RKfcuAdg=w240-h480-rw"
-                                     alt="finance" loading="lazy">
+                                <img src="./assets/images/meathouse.webp"
+                                     alt="Meat House" loading="lazy">
                             </figure>
                         </a>
                         <h3 class="project-title">Meat House</h3>
@@ -876,8 +1510,8 @@
                                     <h4>View</h4>
                                 </div>
 
-                                <img src="https://play-lh.googleusercontent.com/7tQvysY-2Sk5tCWoZy8_5R4mS_u0lZnSnZu9Aq1inWeR50HTnUJM5rYnT5IhiiYotLMWXDXpQNOLeUcvBSuP9w=w240-h480-rw"
-                                     alt="finance" loading="lazy">
+                                <img src="./assets/images/yulchi.webp"
+                                     alt="Yulchi" loading="lazy">
                             </figure>
                         </a>
                         <h3 class="project-title">Yulchi</h3>
@@ -890,8 +1524,8 @@
                                                         <ion-icon name="eye-outline"></ion-icon>
                                                     </div>
 
-                                                    <img src="https://play-lh.googleusercontent.com/FvWr2XBipAXSRrdeqMfyksPaNqWqyELGspHqyoRRlOQVhZZpJEagd528TgPMwvANn_LvGsN_KE2DxKw6_38cITs=w480-h960-rw"
-                                                         alt="finance" loading="lazy">
+                                                    <img src="./assets/images/ishora.webp"
+                                                         alt="Ishora" loading="lazy">
                                                 </figure>
                                             </a>
                                             <h3 class="project-title">Ishora</h3>
@@ -902,22 +1536,15 @@
                 <hr class="divider">
                 <ul class="new-product-list">
                     <li>
-                        <h3 class="project-title">So'zla</h3>
-                        <img src="./assets/images/sozla.png"/>
-                    </li>
-
-                </ul>
-                <ul class="new-product-list">
-                    <li>
                         <h3 class="project-title">Smart Logo</h3>
-                        <img src="./assets/images/project12.png"/>
+                        <img src="./assets/images/project12.webp" alt="" loading="lazy" decoding="async"/>
                     </li>
 
                 </ul>
                 <ul class="new-product-list">
                     <li>
                         <h3 class="project-title">Soplay</h3>
-                        <img src="./assets/images/project8.png"/>
+                        <img src="./assets/images/project8.webp" alt="" loading="lazy" decoding="async"/>
 
                     </li>
 
@@ -925,7 +1552,7 @@
                 <ul class="new-product-list">
                     <li>
                         <h3 class="project-title">Sozo App</h3>
-                        <img src="./assets/images/sozoapp.png"/>
+                        <img src="./assets/images/sozoapp.webp" alt="" loading="lazy" decoding="async"/>
 
                     </li>
 
@@ -934,7 +1561,7 @@
                 <ul class="new-product-list">
                     <li>
                         <h3 class="project-title">Kino plus</h3>
-                        <img src="./assets/images/img_2.png"/>
+                        <img src="./assets/images/img_2.webp" alt="" loading="lazy" decoding="async"/>
 
                     </li>
 
@@ -943,7 +1570,7 @@
                 <ul class="new-product-list">
                     <li>
                         <h3 class="project-title">Nikah Time</h3>
-                        <img src="./assets/images/projectnikah.png"/>
+                        <img src="./assets/images/projectnikah.webp" alt="" loading="lazy" decoding="async"/>
 
                     </li>
                 </ul>
